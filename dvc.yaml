@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python src/data/prepare.py
+    deps:
+      - data/raw/iris.csv
+      - src/data/prepare.py
+    outs:
+      - data/processed/iris.csv
